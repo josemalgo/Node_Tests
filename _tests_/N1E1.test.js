@@ -1,11 +1,13 @@
 const N1E1 = require('../app/N1E1');
 
-test('adds 1 + 2 to equal 3', () => {
-    expect(N1E1.sumar(1,2)).toBe(3);
-});
+describe('Sumar', () => {
+    test('1 + 2 to equal 3', () => {
+        expect(N1E1.sumar(1,2)).toBe(3);
+    });
 
-test('adds 1 + 2 + 3 + 4 to equal 10', () => {
-    expect(N1E1.sumar(1,2,3,4)).toBe(10);
+    test('1 + 2 + 3 + 4 to equal 10', () => {
+        expect(N1E1.sumar(1,2,3,4)).toBe(10);
+    });    
 });
 
 
